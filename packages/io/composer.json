@@ -1,0 +1,22 @@
+{
+    "name": "talesoft/ion-io",
+    "type": "library",
+    "description": "A PHP7.1 io utility library",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Torben Köhn",
+            "email": "tk@talesoft.io"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "psr/http-message": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ion\\": "./src"
+        }
+    }
+}

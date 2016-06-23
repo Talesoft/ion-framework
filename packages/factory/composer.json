@@ -1,0 +1,21 @@
+{
+    "name": "talesoft/ion-factory",
+    "type": "library",
+    "description": "A PHP7.1 factory library",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Torben Köhn",
+            "email": "tk@talesoft.io"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ion\\": "./src"
+        }
+    }
+}

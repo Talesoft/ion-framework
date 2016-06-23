@@ -1,0 +1,38 @@
+{
+    "name": "talesoft/ion-framework",
+    "type": "project",
+    "description": "The first PHP7.1 Framework",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Torben Köhn",
+            "email": "tk@talesoft.io"
+        }
+    ],
+    "repositories": {
+        "talesoft/ion-config": {
+            "type": "path",
+            "url": "./packages/config"
+        },
+        "talesoft/ion-io": {
+            "type": "path",
+            "url": "./packages/io"
+        },
+        "talesoft/ion-http": {
+            "type": "path",
+            "url": "./packages/http"
+        }
+    },
+    "require": {
+        "php": "^7.1",
+        "talesoft/ion-config": "*@dev",
+        "talesoft/ion-io": "*@dev",
+        "talesoft/ion-http": "*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "./bundles"
+        }
+    }
+}

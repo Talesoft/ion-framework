@@ -1,0 +1,29 @@
+{
+    "name": "talesoft/ion-http",
+    "type": "library",
+    "description": "A PHP7.1 HTTP utility library (PSR-7 compliant)",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Torben Köhn",
+            "email": "tk@talesoft.io"
+        }
+    ],
+    "repositories": {
+        "talesoft/ion-io": {
+            "type": "path",
+            "url": "../io"
+        }
+    },
+    "require": {
+        "php": "^7.1",
+        "psr/http-message": "^1.0",
+        "talesoft/ion-io": "*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ion\\": "./src"
+        }
+    }
+}
