@@ -13,6 +13,8 @@ use Ion\Http\{AbstractMessage, Verb, ServerRequest, UploadedFile, Uri};
  * Class Http
  *
  * @package Ion
+ *
+ * @TODO: ALL instances of PSR classes here SHOULD be singletons. They're immutable anyways.
  */
 class Http
 {

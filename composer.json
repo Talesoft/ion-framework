@@ -22,13 +22,23 @@
         "talesoft/ion-http": {
             "type": "path",
             "url": "./packages/http"
+        },
+        "talesoft/ion-http-middleware": {
+            "type": "path",
+            "url": "./packages/http-middleware"
+        },
+        "talesoft/ion-reader": {
+            "type": "path",
+            "url": "./packages/reader"
         }
     },
     "require": {
         "php": "^7.1",
         "talesoft/ion-config": "*@dev",
         "talesoft/ion-io": "*@dev",
-        "talesoft/ion-http": "*@dev"
+        "talesoft/ion-http": "*@dev",
+        "talesoft/ion-http-middleware": "*@dev",
+        "talesoft/ion-reader": "*@dev"
     },
     "autoload": {
         "psr-4": {

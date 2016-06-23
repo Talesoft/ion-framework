@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d0554821692013d7aedbabea157264f6",
-    "content-hash": "421a9228dadd5c27933245aa6ab15ef9",
+    "hash": "4a2c3237a5080ed52c5f782146b5bf84",
+    "content-hash": "cd48a28c007af0cb4d9c7261d6cd5d6e",
     "packages": [
         {
             "name": "psr/http-message",
@@ -55,6 +55,65 @@
                 "response"
             ],
             "time": "2015-05-04 20:22:00"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "f9bc5072e11b2ad15ea55e0f4171cc870dc33a1d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/f9bc5072e11b2ad15ea55e0f4171cc870dc33a1d",
+                "reference": "f9bc5072e11b2ad15ea55e0f4171cc870dc33a1d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2016-06-07 08:38:42"
         },
         {
             "name": "talesoft/ion-config",
@@ -117,6 +176,36 @@
             "description": "A PHP7.1 HTTP utility library (PSR-7 compliant)"
         },
         {
+            "name": "talesoft/ion-http-middleware",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./packages/http-middleware/",
+                "reference": "fa53a93196df8da6d17ecdd40471bc8482512781",
+                "shasum": null
+            },
+            "require": {
+                "php": "^7.1",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ion\\Http\\": "./src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Torben Köhn",
+                    "email": "tk@talesoft.io"
+                }
+            ],
+            "description": "A PHP7.1 HTTP Middleware interface and dispatcher (PSR-7 compliant)"
+        },
+        {
             "name": "talesoft/ion-io",
             "version": "dev-master",
             "dist": {
@@ -145,6 +234,36 @@
                 }
             ],
             "description": "A PHP7.1 io utility library"
+        },
+        {
+            "name": "talesoft/ion-reader",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./packages/reader/",
+                "reference": "fcf89b958e9f0701d5d5ac08ba9b5084788a2c27",
+                "shasum": null
+            },
+            "require": {
+                "php": "^7.1",
+                "symfony/polyfill-mbstring": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ion\\": "./src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Torben Köhn",
+                    "email": "tk@talesoft.io"
+                }
+            ],
+            "description": "A PHP7.1 string and expression parsing utility"
         }
     ],
     "packages-dev": [],
@@ -153,7 +272,9 @@
     "stability-flags": {
         "talesoft/ion-config": 20,
         "talesoft/ion-io": 20,
-        "talesoft/ion-http": 20
+        "talesoft/ion-http": 20,
+        "talesoft/ion-http-middleware": 20,
+        "talesoft/ion-reader": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
