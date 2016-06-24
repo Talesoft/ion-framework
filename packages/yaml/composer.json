@@ -1,0 +1,22 @@
+{
+    "name": "talesoft/ion-yaml",
+    "type": "library",
+    "description": "A PHP7.1 yaml parser",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Torben Köhn",
+            "email": "tk@talesoft.io"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "talesoft/ion-reader": "*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ion\\": "./src"
+        }
+    }
+}

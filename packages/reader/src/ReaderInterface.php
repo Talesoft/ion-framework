@@ -6,7 +6,6 @@ namespace Ion;
 interface ReaderInterface
 {
 
-    public function getInput(): string;
     public function getEncoding(): string;
     public function getLastPeekResult(): string;
     public function getLastMatchResult(): array;
@@ -14,7 +13,6 @@ interface ReaderInterface
     public function getPosition(): int;
     public function getLine();
     public function getOffset();
-    public function normalize(): ReaderInterface;
     public function getLength(): int;
     public function hasLength(): bool;
 
@@ -40,13 +38,13 @@ interface ReaderInterface
     public function peekAlphaIdentifier($allowedChars = null): bool;
     public function peekIdentifier($allowedChars = null): bool;
 
-    public function readIndentation(): ?string;
-    public function readUntilNewLine(): ?string;
-    public function readSpaces(): ?string;
-    public function readDigits(): ?string;
-    public function readAlpha(): ?string;
-    public function readAlphaNumeric(): ?string;
-    public function readIdentifier(string $prefix = null, array $allowedChars = null): ?string;
-    public function readString(array $escapeSequences = null, bool $raw = false): ?string;
-    public function readExpression(array $breaks = null, array $brackets = null): ?string;
+    public function readIndentation();
+    public function readUntilNewLine();
+    public function readSpaces();
+    public function readDigits();
+    public function readAlpha();
+    public function readAlphaNumeric();
+    public function readIdentifier(string $prefix = null, array $allowedChars = null);
+    public function readString(array $escapeSequences = null, bool $raw = false);
+    public function readExpression(array $breaks = null, array $brackets = null);
 }

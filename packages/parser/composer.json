@@ -1,0 +1,28 @@
+{
+    "name": "talesoft/ion-parser",
+    "type": "library",
+    "description": "A PHP7.1 parsing and dumping utility library",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Torben Köhn",
+            "email": "tk@talesoft.io"
+        }
+    ],
+    "repositories": {
+        "talesoft/ion-reader": {
+            "type": "path",
+            "url": "../reader"
+        }
+    },
+    "require": {
+        "php": "^7.1",
+        "talesoft/ion-reader": "*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ion\\": "./src"
+        }
+    }
+}

@@ -1,0 +1,11 @@
+
+name: App Bundle
+version: 1.0
+
+requires:
+    - Ion\UserBundle
+
+features:
+    config: Ion\Config\Feature
+    entities: Ion\Orm\Feature
+    forms: Ion\Form\Feature
